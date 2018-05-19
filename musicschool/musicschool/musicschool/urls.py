@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^contracts/', include('contracts.urls')),
     url(r'^preferences/', include('preferences.urls')),
     url(r'^parents/', include('parents.urls')),
+    url(r'^accounts/', include('accounts.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
