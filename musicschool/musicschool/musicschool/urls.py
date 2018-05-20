@@ -8,6 +8,8 @@ from django.conf.urls import include, url
 from django.contrib import admin
 admin.autodiscover()
 
+from musicschool import views
+
 urlpatterns = [
     # Examples:
     # url(r'^$', musicschool.views.home, name='home'),
@@ -18,7 +20,7 @@ urlpatterns = [
     # domainname.com/instruments handled by instruments.url
     #
     ##
-    #url(r'^accounts/', include('registration.backends.hmac.urls')),
+    url(r'^$', views.login_redirect, name='login_redirect'),
     url(r'^instruments/', include('instruments.urls')), 
     url(r'^students/', include('students.urls')),
     url(r'^teachers/', include('teachers.urls')),
