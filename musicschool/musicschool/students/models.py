@@ -17,5 +17,4 @@ class Students(models.Model):
         if kwargs['created']: 
             student = Students.objects.create(student=kwargs['instance'])
 
-
     post_save.connect(create_profile,sender=User)
