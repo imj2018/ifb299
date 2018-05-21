@@ -32,6 +32,7 @@
   <ItemGroup>
     <Compile Include="accounts\admin.py" />
     <Compile Include="accounts\apps.py" />
+    <Compile Include="accounts\forms.py" />
     <Compile Include="accounts\migrations\__init__.py" />
     <Compile Include="accounts\models.py" />
     <Compile Include="accounts\tests.py" />
