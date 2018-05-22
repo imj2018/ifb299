@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.template.response import TemplateResponse
 from accounts.forms import ApplicationForm
+from django.contrib.auth.models import User
 
 # Create your views here.
 def home(request):
@@ -16,3 +17,7 @@ def application(request):
         form = ApplicationForm()
         args = {'form' : form}
         return TemplateResponse(request,'pages/application_form.html', args)
+
+def profile(request):
+    args = {'user': request.user}
+    return TemplateResponse(request,'pages/profile.html', args)

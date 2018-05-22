@@ -36,6 +36,7 @@
                     <a class="p-2 text-light" href="/accounts/application">Student Application</a>
                     <a class="p-2 text-light" href=/instruments>Instrument Hire</a>
                     <a class="p-2 text-light" href="#">Feedback</a>
+                    <a class="p-2 text-light" href="/accounts/profile">Account</a>
                     <a class="p-2 text-light" href="/accounts/login">Login</a>
                 </nav>
             </div>
@@ -44,8 +45,12 @@
             <div class="col-md-6 px-0">
                 {% block header %}
                 {% endblock %}
+                {% block content %}
+                
                 <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
                 <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+
+                {% endblock %}
             </div>
         </div>
 
