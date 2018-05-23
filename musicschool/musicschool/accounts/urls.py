@@ -8,4 +8,5 @@ urlpatterns = [
  url(r'^logout/$', logout, {'template_name': 'pages/logout.html'}),
  url(r'^application/$', views.application, name='application'),
  url(r'^profile/$', views.profile, name='profile'),
+ url(r'^$', views.students, name='students'),
 ]
