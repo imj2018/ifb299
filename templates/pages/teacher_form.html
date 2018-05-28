@@ -1,0 +1,36 @@
+﻿{% extends 'layout/layout2.html' %}
+
+{% block title %} Teacher Application {% endblock %}
+
+{% block header %}
+<h1> Teacher Application </h1>
+<p>Apply Here!</p>
+{%endblock%}
+
+{% block content %}
+
+<div class="container">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p}}
+        <button class="btn btn-primary" type="submit"> Submit </button>
+        <a href="/accounts/teacher_application" class="btn btn-default">Cancel</a>
+    </form>
+
+    <br />
+        <div class="p-3 mb-3 bg-light rounded">
+            <p>
+                <h1>Test Email Details</h1>
+                <strong>Name: {{first_name}}</strong><br />
+                <strong>Last Name: {{last_name}}</strong><br />
+                <strong>DOB: {{date_of_birth}}</strong><br />
+                <strong>Qualifications: {{qualifications}}</strong><br />
+                <strong>Email: {{email_address}}</strong><br />
+                <strong>Phone #: {{phone_number}}</strong><br />
+                <strong>Facebook: {{facebook}}</strong><br />
+
+            </p>
+        </div>
+ 
+
+{% endblock %}

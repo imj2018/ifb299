@@ -1,4 +1,4 @@
-﻿{% extends 'layout/layout2.html' %}
+﻿{% extends 'layout/layout3.html' %}
 
 {% block title %} Instruments Page {% endblock %}
 
@@ -6,10 +6,13 @@
 <h1> Instruments Hire Page  </h1>
 {%endblock%}
 
-{% block content %}
+{%block content%}
+<p>Instrument hire here!</p>
+{%endblock%}
 
+{% block table %}
 <div class="container">
-    <table class="table table table-sm table-hover class="container"">
+    <table class="table table table-sm table-hover container">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">Instument</th>
@@ -29,12 +32,21 @@
             {% endfor %}
         </tbody>
     </table>
+    <p>
+        <h1>(Instrument enqury form here)</h1>
+    </p>
 </div>
 
 {{data.name}}<br /> <!-- just get one item --> 
-
 {% endblock %}
 
+{% block main %}
+Text Text Text
+{% endblock %}
+
+{% block side %}
+---
+{% endblock %}
 <!-- 
 <!DOCTYPE html>
 <html>

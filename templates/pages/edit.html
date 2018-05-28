@@ -1,0 +1,18 @@
+﻿{% extends 'layout/layout2.html' %}
+
+{% block title %} Edit Your Profile{% endblock %}
+
+{% block header %}
+<h1>Edit Your Profile </h1>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p}}
+        <button class="btn btn-primary" type="submit"> Submit </button>
+        <a href="/accounts/teacher_application" class="btn btn-default">Cancel</a>
+    </form>
+</div>
+{% endblock %}

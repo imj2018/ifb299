@@ -2,15 +2,24 @@
 
 {% block title %} Your Profile {% endblock %}
 
-    {% block head %}
-<title>Home</title>
-    {% endblock %}
+{% block head %}
+<title>Your Home</title>
+{% endblock %}
 
-    {% block header %}
-<h1>Your Home page</h1>
+{% block header %}
+<h1>Profile</h1>
+<img src="https://www.freeiconspng.com/uploads/account-icon-33.png" width="250"> <br /> 
+    Username: {{user}} <br />
+    First name: {{user.first_name}} <br />
+    Last name: {{user.last_name}} <br />
+    Email: {{user.email}} <br />
     {% endblock %}
 
     {% block content %}
-<p> Hello {{user.first_name}} {{user.last_name}}</p>
-    {% endblock %}
+<br />
+<p><a href="/accounts/profile/edit"><button class="btn btn-primary">Edit</button></a>
+<a href="/accounts/change_password"><button class="btn btn-primary">Change Password</button></a> </p>
+    {% endblock%}
+
+
 
