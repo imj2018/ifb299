@@ -9,6 +9,7 @@ from .import views
 ##
 urlpatterns = [
  url(r'^$', views.instruments, name='instruments'),
+ url(r'^instrument_form/$', views.Instrument.as_view() ),
 ]
 
 

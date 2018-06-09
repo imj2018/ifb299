@@ -62,7 +62,7 @@ def change_password(request):
         if form.is_valid():
             form.save() 
             update_session_auth_hash(request, form.user)
-            return redirect('accounts/profile')
+            return redirect('/accounts/profile')
         else:
             return redirect('/account/change_password/')
     else:

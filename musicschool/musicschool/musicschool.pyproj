@@ -63,6 +63,9 @@
     <Compile Include="feedback\__init__.py" />
     <Compile Include="instruments\admin.py" />
     <Compile Include="instruments\apps.py" />
+    <Compile Include="instruments\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="instruments\migrations\__init__.py" />
     <Compile Include="instruments\models.py" />
     <Compile Include="instruments\tests.py" />
